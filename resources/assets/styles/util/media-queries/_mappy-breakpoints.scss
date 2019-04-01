@@ -1,0 +1,37 @@
+// Import mappy-breakpoints from npm
+// Zell Liew - https://github.com/zellwk/mappy-breakpoints
+@import "~mappy-breakpoints";
+
+
+//$breakpoints: (
+//	small: 480px,
+//	med: 640px,
+//	large: 960px,
+//	big: 1023px,
+//	wide: 1200px,
+//	mega: 1440px
+//);
+//
+//
+//$mappy-queries: (
+//	small: mappy-bp(small),
+//	med: mappy-bp(med),
+//	large: mappy-bp(large),
+//	big: mappy-bp(big),
+//	wide: mappy-bp(wide),
+//	mega: mappy-bp(mega)
+//);
+
+
+$breakpoints: (
+	small: 480px,
+	large: 800px
+);
+
+
+$mappy-queries: (
+	phone: mappy-bp(h max-height small), // media all and (max-height: 29.9375em)
+	tablet: mappy-bp(small large), // @media all and (min-width 30em) and (max-width: 49.375em)
+	desktop: mappy-bp(960px 1200px), // media all and (min-width: 60em) and (max-width: 74.9375em)
+	change-type: mappy-bp(small, $type: screen) // media screen and (min-width: 30em)
+);

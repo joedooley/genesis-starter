@@ -1,0 +1,26 @@
+{
+  "name": "genesis-starter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "dependencies": {
+    "jquery-backstretch": "^2.1.17"
+  },
+  "devDependencies": {
+    "laravel-mix": "^4.0.15",
+    "lost": "^8.3.1",
+    "mappy-breakpoints": "^0.2.3",
+    "postcss-preset-env": "^6.6.0",
+    "resolve-url-loader": "^2.3.1",
+    "sanitize.css": "^8.0.0",
+    "sass": "^1.17.3",
+    "sass-loader": "^7.1.0",
+    "smart-banner-webpack-plugin": "^3.0.1",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

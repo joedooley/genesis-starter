@@ -1,0 +1,50 @@
+{
+	"name": "devdesigns/genesis-starter",
+	"type": "wordpress-theme",
+	"description": "Custom Genesis starter for child theme development.",
+	"homepage": "https://genesis-starter.test/",
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Joe Dooley",
+			"email": "hello@developingdesigns.com",
+			"homepage": "https://twitter.com/devdesignstampa/",
+			"role": "Developer"
+		},
+		{
+			"name": "Developing Designs",
+			"email": "hello@developingdesigns.com",
+			"homepage": "https://developingdesigns.com/",
+			"role": "Company"
+		}
+	],
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"config": {
+		"optimize-autoloader": true,
+		"preferred-install": "dist",
+		"sort-packages": true
+	},
+	"require": {
+		"php": "^7.2",
+		"composer/installers": "~1.0",
+		"roots/soil": "^3.7"
+	},
+	"autoload": {
+		"psr-4": { "DevDesigns\\GenesisStarter\\": "app/" },
+		"files": [
+			"app/helpers.php",
+			"app/setup.php",
+			"app/actions.php",
+			"app/filters.php",
+			"app/admin.php"
+		]
+	},
+	"extra": {
+		"installer-paths": {
+			"../../plugins/{$name}/": ["type:wordpress-plugin"],
+			"../../mu-plugins/{$name}/": ["type:wordpress-muplugin"]
+		}
+	},
+	"scripts": {}
+}
